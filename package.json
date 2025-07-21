@@ -2,6 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://wenceslol.github.io/Projeto-Portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
