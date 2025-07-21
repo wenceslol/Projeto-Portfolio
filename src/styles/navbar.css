@@ -8,6 +8,7 @@
   transition: all 0.3s ease;
 }
 
+
 .orchid {
     height: 100px;
 }
@@ -86,23 +87,31 @@
 
 .menu-icon {
   display: none;
-  font-size: 1.5rem;
+  padding-right: 8vw;
+  font-size: 2rem;
   cursor: pointer;
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
+    
+  }
+
+  .navbar {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.4);
   }
 
   .nav-menu {
     position: fixed;
-    top: 80px;
+    top: 100px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: white;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.4);
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
