@@ -1,0 +1,140 @@
+.header-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.music-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1.5rem; /* Espaçamento opcional */
+}
+
+.music {
+    width: 300px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 50%,
+        var(--primary-color) 100%
+    );
+    background-size: 200%;
+    background-position: 0%;
+    animation: glowShift 10s linear infinite;
+
+}
+
+.teste {
+    display: inline-block;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.header-text {
+  flex: 1;
+}
+
+
+
+.header-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+  
+}
+
+.header-text h1 span {
+    filter: blur(0.3px);
+    color: var(--primary-color);
+    background: linear-gradient(
+        90deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 50%,
+        var(--primary-color) 100%
+    );
+    background-size: 200%;
+    background-position: 0%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: glowShift 10s linear infinite;
+    
+}
+
+@keyframes glowShift {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center; /* Mude para 300% para criar loop suave */
+    }
+}
+
+.header-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    
+}
+
+.header-text .subtext {
+    color: var(--secondary-color);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;
+}
+
+.header-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  max-width: 600px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+  padding-top: 20px;
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .header-buttons {
+    justify-content: center;
+  }
+}
