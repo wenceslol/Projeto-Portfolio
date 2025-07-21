@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# Projeto Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá!  
+Bem-vindo(a) ao repositório do meu portfólio pessoal. Este projeto foi desenvolvido para exibir meus trabalhos, habilidades e experiências como desenvolvedor(a).
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi construído utilizando as seguintes tecnologias principais:
 
-## Expanding the ESLint configuration
+* **Vite**: Um empacotador de módulos de nova geração para desenvolvimento web frontend. Escolhido pela sua velocidade e experiência de desenvolvimento otimizada.
+* **React (TypeScript)**: Uma biblioteca JavaScript para construir interfaces de usuário. O uso de TypeScript garante maior segurança de tipo e escalabilidade ao código.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Recursos
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **Design Responsivo**: O portfólio é totalmente responsivo e otimizado para visualização em diferentes tamanhos de tela (desktop, tablet, mobile).
+* **Navegação Intuitiva**: Fácil acesso a todas as seções (Sobre Mim, Projetos, Contato).
+* **Seção de Projetos Detalhada**: Apresenta meus principais projetos com descrições, tecnologias utilizadas, links para o deploy e código fonte.
+* **Formulário de Contato**: Permite que visitantes entrem em contato diretamente comigo.
+* **Animações e Transições Suaves**: Para uma experiência de usuário mais agradável.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ⚙️ Como Rodar o Projeto Localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Siga estas instruções para configurar e rodar o projeto em sua máquina local:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/wenceslol/Projeto-Portfolio.git
+    cd seu-portfolio
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou yarn install
+    ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    # ou yarn dev
+    ```
+    O aplicativo estará disponível em `http://localhost:5173` (ou outra porta indicada pelo Vite).
+
+4.  **Para construir o projeto para produção:**
+    ```bash
+    npm run build
+    # ou yarn build
+    ```
+    Isso criará uma pasta `dist` com os arquivos otimizados para deploy.
+
+## 🌐 Deploy
+
+Este portfólio está disponível online em: [Github.io/Projeto-Portfolio](https://wenceslol.github.io/Projeto-Portfolio/)
+
+## 📞 Contato
+
+* **Email**: [wences.dev@gmail.com](mailto:wences.dev@gmail.com)
+* **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/thiago-wenceslau/)
+* **GitHub**: [GitHub](https://github.com/wenceslol/)
