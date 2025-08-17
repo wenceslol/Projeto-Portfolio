@@ -1,7 +1,14 @@
 .projects-section {
-  height: 100vh;
+  min-height: 100vh;
   align-content: center;
   justify-content: center;
+}
+
+.project-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0; /* Arredonda apenas o topo se o card tiver border-radius */
+  position: relative;
 }
 
 .projects-grid {
@@ -29,11 +36,15 @@
 .project-image {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .project-image img {
-  width: 100%;
-  height: 30vh;
+  flex: 1 1 45%; /* Faz cada imagem ocupar pelo menos 45% da largura */
+  min-width: 150px; /* Largura mínima antes do wrap */
+  height: 25vh; /* Reduzi um pouco a altura para acomodar múltiplas linhas */
   object-fit: contain;
 }
 

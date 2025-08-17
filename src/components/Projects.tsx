@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import '../styles/projects.css';
 import AppTreino1 from '../assets/AppTreino1.png'
 import AppTreino2 from '../assets/AppTreino2.png'
+import AppTreino3 from '../assets/AppTreino3.png'
+import AppTreino4 from '../assets/AppTreino4.png'
+import AppTreino5 from '../assets/AppTreino5.png'
 import type { SectionProp } from './Types';
 import { ImageWithModal } from './ImageWithModal';
 import { useEffect } from 'react';
@@ -25,7 +28,7 @@ const Projects = ({ setActiveSection }: SectionProp) => {
       title: "Controle de Treino",
       description: "App mobile para controle de rotinas de treino e métricas de gasto calórico.",
       technologies: ["React Native", "Typescript", "Node.js", "Express", "PostgreSQL"],
-      image: [AppTreino1, AppTreino2],
+      image: [AppTreino1, AppTreino2, AppTreino3, AppTreino4, AppTreino5],
       link: "https://www.linkedin.com/posts/thiago-wenceslau_reactnative-nodejs-postgresql-activity-7352033038215614464-A3bn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFrvTEsBBCaGYUvhxeWlrHs2d0ApelKVklQ",
       github: "https://github.com/wenceslol/Projeto-Treino"
     },
